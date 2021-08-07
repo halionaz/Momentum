@@ -13,20 +13,34 @@ body{
 }
 
 .container{
-    padding: 100px;
+    margin: 80px;
+    padding: 20px;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: white;
+    background-color: rgba(41, 41, 41, 0.486);
 }
 
 .date{
-    color: white;
     font-size: 20px;
 }
 .clock{
-    color: white;
     font-size: 150px;
+}
+
+.username{
+    font-weight: lighter;
+    margin-top: 25px;
+    font-size: 30px;
+}
+.username #jsNameInput{
+    width: 250px;
+    height: 26px;
+    text-align: center;
+    border: none;
+    border-radius: 13px;
 }
