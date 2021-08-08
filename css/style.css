@@ -17,6 +17,9 @@ body{
     -webkit-user-select: none;
     user-select: none;
 }
+input:focus{
+    outline: none;
+}
 
 .container{
     width: 80%;
@@ -27,7 +30,8 @@ body{
     align-items: center;
     justify-content: flex-end;
     color: white;
-    background-color: rgba(41, 41, 41, 0.486);
+    background-color: rgba(0, 0, 0, 0.247);
+    border-radius: 10px;
 }
 
 .container .timeService{
@@ -78,4 +82,47 @@ body{
 .weather .location{
     font-size: 12px;
     font-weight: lighter;
+}
+
+/* .todo .todoList{
+
+} */
+.todo .todoAdd{
+    display: flex;
+    align-items: center;
+}
+.todoAdd .todoAddIcon{
+    font-size: 25px;
+    margin-right: 2px;
+    transition: 100ms;
+}
+.todoAdd .todoAddIcon:hover{
+    transform: scale(1.1);
+}
+.todoAdd .todoAddIcon:active{
+    transform: scale(0.9);
+}
+.todoAdd .todoInput{
+    height: 22px;
+    border: none;
+    border-radius: 11px;
+    padding-left: 10px;
+}
+
+.todolist{
+    margin-bottom: 10px;
+}
+
+.todolist li{
+    display: flex;
+    align-items: center;
+}
+.todolist ion-icon{
+    font-size: 25px;
+    margin-right: 2px;
+}
+.todolist .listText{
+    margin-left: 5px;
+    font-size: 15px;
+    font-weight: 300;
 }
