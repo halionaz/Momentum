@@ -22,7 +22,6 @@ function add(todo,ind, done){
     item.appendChild(doneIcon);
     item.appendChild(content);
     todoList.appendChild(item);
-    console.log(id);
 }
 
 function inputAdd(event){
