@@ -7,10 +7,28 @@
     </head>
     <body>
         <div class="container">
-            <div class="date" id="jsDate">2021.08.07</div>
-            <div class="clock" id="jsClock">00:00:00</div>
+            <div class="timeService">
+                <div class="date" id="jsDate">2021.08.07</div>
+                <div class="clock" id="jsClock">00:00:00</div>
+            </div>
             <div class="username" id="jsUsername"></div>
+            <div class="footer">
+                <div class="weather">
+                    <ion-icon class="weatherIcon" id="jsWeatherIcon" name="ellipse" ></ion-icon>
+                    <div class="location" id='jsLocation'>--</div>
+                    <div class="temp" id="jsTemp">--º</div>
+                    <div class="description" id="jsDescription">--</div>
+                </div>
+                <div class="todo">
+                    <ul class="todolist">
+
+                    </ul>
+                    todo
+                </div>
+            </div>
         </div>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script src="js/system.js"></script>
+        <script src="js/weather.js"></script>
     </body>
 </html>

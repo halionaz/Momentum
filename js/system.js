@@ -3,11 +3,13 @@ const date = document.querySelector('#jsDate');
 const clock = document.querySelector('#jsClock');
 const usernameContainer = document.querySelector('#jsUsername');
 
-body.style.backgroundImage = `url(./img/${Math.floor(Math.random()*4)}.jpg)`;
+body.style.backgroundImage = `url(./img/${Math.floor(Math.random()*6)}.jpg)`;
+
+const day = ['SUN','MON','TUS','WED','THU','FRI','SAT'];
 
 function clockDisplay(){
     const now = new Date();
-    date.innerHTML = `${now.getFullYear()}.${String(now.getMonth()+1).padStart(2,'0')}.${String(now.getDate()).padStart(2,'0')}`;
+    date.innerHTML = `${now.getFullYear()}.${String(now.getMonth()+1).padStart(2,'0')}.${String(now.getDate()).padStart(2,'0')} (${day[now.getDay()]})`;
     clock.innerHTML = `${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}:${String(now.getSeconds()).padStart(2,'0')}`
 }
 
@@ -20,6 +22,7 @@ function nameInput(){
     const form = document.createElement('form');
     input.type = 'text';
     input.placeholder = '이름을 입력하세요 / Input your name';
+    input.autocomplete = 'off';
     input.id = 'jsNameInput';
     form.appendChild(input);
     form.addEventListener('submit',event => {
