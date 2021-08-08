@@ -61,7 +61,6 @@ function doneIt(event){
     const deleteId = event.target.id;
     for(let i = 0; i < list.length; i++){
         if(list[i].ind === parseInt(deleteId)){
-            console.log(list[i]);
             list.splice(i,1);
         }
     }
