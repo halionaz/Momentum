@@ -84,9 +84,9 @@ input:focus{
     font-weight: lighter;
 }
 
-/* .todo .todoList{
-
-} */
+.todo{
+    width: 184px;
+}
 .todo .todoAdd{
     display: flex;
     align-items: center;
